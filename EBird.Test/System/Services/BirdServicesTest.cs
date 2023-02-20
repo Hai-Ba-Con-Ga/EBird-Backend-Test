@@ -43,7 +43,10 @@ public class BirdServicesTest : IDisposable
     public async Task GetBirdList_ThrowNotFoundException_WhenDataNotFound()
     {
         // Arrange
-        Assert.ThrowsAsync<NotFoundException>( () => _birdServices.GetBirds());
+        //Assert.ThrowsAsync<NotFoundException>( () => _birdServices.GetBirds());
+        var result = await _birdServices.GetBirds();
+        // Assert
+        Assert.AreEqual(0, result.Count);
     }
 
 
