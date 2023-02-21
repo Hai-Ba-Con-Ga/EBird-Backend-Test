@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EBird.Application.Exceptions;
 using EBird.Application.Interfaces.IRepository;
 using EBird.Application.Model.Auth;
 using EBird.Application.Services;
@@ -70,6 +71,35 @@ namespace EBird.Test.System.Services
             Assert.AreEqual(AccountMockData.GetAccountList().Count, result.Count);
 
         }
+        //Test case 3: Get account by id when data not found
+        [Test, Order(3)]
+        public async Task GetAccountById_ThrowNotFoundException_WhenDataNotFound()
+        {
+            var accountId = Guid.NewGuid();
+            
+            // Assert
+            Assert.ThrowsAsync<NotFoundException>(async () => await _accountServices.GetAccountById(accountId));
+        }
+        //Test case 4: Get account by id when data found
+        [Test, Order(4)]
+        public async Task GetAccountById_ReturnData_WhenDataFound()
+        {
+            var account = AccountMockData.GetAccount();
+            await _accountRepository.CreateAsync(account);
+            
+
+            // Actual values
+            var result = await _accountServices.GetAccountById(account.Id);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.AreEqual(account.Id, result.Id);
+            Assert.AreEqual(account.Email, result.Email);
+            Assert.AreEqual(account.FirstName, result.FirstName);
+            Assert.AreEqual(account.LastName, result.LastName);
+        }
+        
+
 
         
         
