@@ -17,11 +17,13 @@ namespace EBird.Api.Mapper
     {
         public AutoMapperProfile()
         {
-            ApplyMappingsFromAssembly(Assembly.Load("EBird.Application"));
+            ApplyMappingsFromAssembly(Assembly.Load("EBird.Application"), Assembly.Load("EBird.Test"));
         }
 
-        private void ApplyMappingsFromAssembly(Assembly assembly)
+        private void ApplyMappingsFromAssembly(Assembly assembly1, Assembly assembly2)
         {
+            var assembly = assembly1 + assembly2;
+        
             var mapFromType = typeof(IMapFrom<>);
             var mapToType = typeof(IMapTo<>);
 
