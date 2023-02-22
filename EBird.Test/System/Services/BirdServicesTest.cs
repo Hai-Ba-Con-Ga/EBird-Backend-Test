@@ -44,6 +44,7 @@ public class BirdServicesTest : IDisposable
     {
         // Arrange
         Assert.ThrowsAsync<NotFoundException>( () => _birdServices.GetBirds());
+        
     }
 
 
