@@ -113,7 +113,7 @@ namespace EBird.Api.Controllers
             var response = new Response<string>();
             try
             {
-                await _accountRepository.DeleteAsync(id);
+                await _accountServices.DeleteAccount(id);
                 response = Response<string>.Builder().SetSuccess(true).SetStatusCode((int)HttpStatusCode.OK).SetMessage("Delete account successfully");
             }
             catch (NotFoundException ex)
