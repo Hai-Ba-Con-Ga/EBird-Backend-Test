@@ -63,7 +63,7 @@ An impeccable place for you to write a fascinating Bird Story
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 
@@ -75,7 +75,7 @@ An impeccable place for you to write a fascinating Bird Story
 * [![.NET][.NET]][.NET-url]
 * [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]
 * [![NUnit][NUnit]][NUnit-url]
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 
@@ -103,14 +103,14 @@ Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-u
    dotnet run --project EBird.Api
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 <!-- CONTRIBUTING -->
