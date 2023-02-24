@@ -57,7 +57,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Write your own repeccable story
+An impeccable place for you to write a fascinating Bird Story
 
 [![Product Name Screen Shot][product-screenshot]](https://www.globird.tech/)
 
