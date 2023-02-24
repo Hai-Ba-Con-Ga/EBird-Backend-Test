@@ -59,24 +59,20 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-An impeccable place for you to write a fascinating Bird Story
+An impeccable place for you to write a fascinating Bird Story :cowboy_hat_face:
 
 [![Product Name Screen Shot][product-screenshot]](https://www.globird.tech/)
 
-
-
-<p align="right">( <a href="#readme-top">back to top</a> )</p>
-
-
+<br>
 
 ### Technologies Used
 
-:camera: [![React][React.js]][React-url]<br>
-:camera: [![Vue][Vue.js]][Vue-url]
-* [![Vite][Vite]][Vite-url]
-* [![.NET][.NET]][.NET-url]
-* [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]
-* [![NUnit][NUnit]][NUnit-url]
+:robot: [![React][React.js]][React-url]<br>
+:robot: [![Vue][Vue.js]][Vue-url]<br>
+:robot: [![Vite][Vite]][Vite-url]<br>
+:robot: [![.NET][.NET]][.NET-url]<br>
+:robot: [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]<br>
+:robot: [![NUnit][NUnit]][NUnit-url]<br>
 <p align="right">( <a href="#readme-top">back to top</a> )</p>
 <br>
 
