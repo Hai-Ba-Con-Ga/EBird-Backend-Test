@@ -57,7 +57,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Write example about of project
+Write your own repeccable story
 
 [![Product Name Screen Shot][product-screenshot]](https://www.globird.tech/)
 
