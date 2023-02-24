@@ -83,8 +83,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-SDK 6.0.406 and ASP.NET Core Runtime 6.0.14 at [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)<br />
-Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-us/download)
+* SDK 6.0.406 and ASP.NET Core Runtime 6.0.14 at [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-us/download)
 
 ### Installation
 
