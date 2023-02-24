@@ -6,7 +6,7 @@
   <br>
   GLOBIRD
 </h1>
-<h4 align="center">The system connects members to conduct friendly competition with birds.</h4>
+<h4 align="center">A connectivity system that helps to effortlessly hook birder up.</h4>
 
 <div align="center">
 
@@ -71,8 +71,8 @@ An impeccable place for you to write a fascinating Bird Story :cowboy_hat_face:
 :robot: [![Vue][Vue.js]][Vue-url]<br>
 :robot: [![Vite][Vite]][Vite-url]<br>
 :robot: [![.NET][.NET]][.NET-url]<br>
-:robot: [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]<br>
 :robot: [![NUnit][NUnit]][NUnit-url]<br>
+:robot: [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]<br>
 <p align="right">( <a href="#readme-top">back to top</a> )</p>
 <br>
 
@@ -107,6 +107,15 @@ To get a local copy up and running follow these simple example steps.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Lobby UI
+![Product Name Screen Shot][lobby-screenshot]
+
+Build your own profile
+![Profile Screen Shot][profile-screenshot]
+
+Create a specific Bird collection !
+![Bird Collection Screen Shot][bird-collection-screenshot]
+
 
 <p align="right">( <a href="#readme-top">back to top</a> )</p>
 
@@ -146,6 +155,10 @@ Link Project: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.co
 [issues-shield]: https://img.shields.io/github/issues/Hai-Ba-Con-Ga/EBird-Backend-Test?style=for-the-badge
 [issues-url]: https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/issues
 [product-screenshot]: https://i.imgur.com/Tj43wy0.png
+[lobby-screenshot]: https://i.imgur.com/UZjCxNW.png
+[profile-screenshot]:https://i.imgur.com/bvIVAjR.png
+[bird-collection-screenshot]:https://i.imgur.com/ymL6CJc.png
+
 [Vite]: https://img.shields.io/static/v1?style=for-the-badge&message=Vite&color=646CFF&logo=Vite&logoColor=FFFFFF&label=
 [Vite-url]: https://vitejs.dev/
 [.NET]: https://img.shields.io/static/v1?style=for-the-badge&message=.NET&color=512BD4&logo=.NET&logoColor=FFFFFF&label=
