@@ -49,7 +49,10 @@ namespace EBird.Infrastructure.Repositories
             {
                 return null;
             }
+            
             _entity.IsDeleted = true;
+            
+          
             await UpdateAsync(_entity);
             return _entity;
         }
