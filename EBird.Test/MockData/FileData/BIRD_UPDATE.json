@@ -1,0 +1,12 @@
+[
+  {
+      "name": "string",
+      "age": 0,
+      "weight": 0,
+      "elo": 0,
+      "status": "string",
+      "description": "string",
+      "color": "string",
+      "birdTypeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  }
+]
