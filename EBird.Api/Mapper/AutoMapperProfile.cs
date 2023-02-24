@@ -17,7 +17,7 @@ namespace EBird.Api.Mapper
     {
         public AutoMapperProfile()
         {
-            ApplyMappingsFromAssembly(Assembly.Load("EBird.Application"), Assembly.Load("EBird.Test"));
+            ApplyMappingsFromAssembly(Assembly.Load("EBird.Application"));
         }
 
         private void ApplyMappingsFromAssembly(params Assembly[] assemblies)
