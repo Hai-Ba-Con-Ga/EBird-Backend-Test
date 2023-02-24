@@ -5,48 +5,41 @@
   <a href="http://globird.tech/"><img src="https://cdn-icons-png.flaticon.com/512/3418/3418582.png" alt="globird" width="200"></a>
   <br>
   GLOBIRD
-  <br>
 </h1>
+<h4 align="center">The system connects members to conduct friendly competition with birds.</h4>
 
+<div align="center">
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url] </br></br>
-[![Demostration of using CI with GitHub Actions, NUnit | © 2023 by haibaconga](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml/badge.svg)](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml)
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div>
-
-  <h1>GloBird</h1>
-
-  <p>
-    The system connects members to conduct friendly competition with birds.
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="http://globird.tech/">View Demo</a>
-    ·
-    <a href="https://fptuniversity-my.sharepoint.com/:x:/g/personal/linhtkse160038_fpt_edu_vn/EUYknXGAQjJOkFn7Eo5TmKMByESCDQ2rcyOsUg1DlgETRQ?e=b5ootl">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Forks][forks-shield]][forks-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url] </br></br>
+  [![Demostration of using CI with GitHub Actions, NUnit | © 2023 by haibaconga](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml/badge.svg)](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml)
 </div>
+<!--  -->
+<p align="center">
+  <a href="http://globird.tech/">View Demo</a>
+    •
+    <a href="https://fptuniversity-my.sharepoint.com/:x:/g/personal/linhtkse160038_fpt_edu_vn/EUYknXGAQjJOkFn7Eo5TmKMByESCDQ2rcyOsUg1DlgETRQ?e=b5ootl">Report Bug</a>
+    •
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <br>
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+</p>
+
 
 
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+<summary>INDEX</summary>
+<h2>Table of Contents</h2>
+  
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      Examples of the project
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Technologies Used</a></li>
       </ul>
     </li>
     <li>
@@ -61,7 +54,7 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
+<br>
 
 
 <!-- ABOUT THE PROJECT -->
@@ -76,16 +69,16 @@ An impeccable place for you to write a fascinating Bird Story
 
 
 
-### Built With
+### Technologies Used
 
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
+:camera: [![React][React.js]][React-url]<br>
+:camera: [![Vue][Vue.js]][Vue-url]
 * [![Vite][Vite]][Vite-url]
 * [![.NET][.NET]][.NET-url]
 * [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]
 * [![NUnit][NUnit]][NUnit-url]
 <p align="right">( <a href="#readme-top">back to top</a> )</p>
-
+<br>
 
 
 <!-- GETTING STARTED -->
@@ -103,7 +96,7 @@ Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-u
    ```sh
    git clone -b master https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test.git
    ```
-2. Install dependency
+2. Install dependencies
    ```sh
    dotnet restore
    ```
@@ -134,7 +127,7 @@ Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-u
 
 Hai Ba Con Ga - [haibaconga](https://github.com/Hai-Ba-Con-Ga)
 
-Project Link: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.com/Hai-Ba-Con-Ga/EBird-Backend)
+Link Project: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.com/Hai-Ba-Con-Ga/EBird-Backend)
 
 <p align="right">( <a href="#readme-top">back to top</a> )</p>
 
