@@ -127,13 +127,13 @@ Hai Ba Con Ga - [haibaconga](https://github.com/Hai-Ba-Con-Ga)
 
 Project Link: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.com/Hai-Ba-Con-Ga/EBird-Backend)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 
