@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Taka",
+    "age": 12,
+    "weight": 6,
+    "elo": 1500,
+    "status": "string",
+    "description": "string",
+    "color": "string",
+    "birdTypeId": "",
+    "onwerId": ""
+  },
+  {
+    "name": "lala",
+    "age": 13,
+    "weight": 5,
+    "elo": 1500,
+    "status": "string",
+    "description": "string",
+    "color": "string",
+    "birdTypeId": "",
+    "onwerId": ""
+  }
+]
