@@ -156,7 +156,7 @@ Link Project: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.co
 [issues-url]: https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/issues
 [product-screenshot]: https://i.imgur.com/Tj43wy0.png
 [lobby-screenshot]: https://i.imgur.com/UZjCxNW.png
-[profile-screenshot]:https://i.imgur.com/bvIVAjR.png
+[profile-screenshot]:https://i.imgur.com/8l8I8pT.png
 [bird-collection-screenshot]:https://i.imgur.com/ymL6CJc.png
 
 [Vite]: https://img.shields.io/static/v1?style=for-the-badge&message=Vite&color=646CFF&logo=Vite&logoColor=FFFFFF&label=
