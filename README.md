@@ -6,15 +6,14 @@
   <br>
   GLOBIRD
   <br>
-  [![Contributors][contributors-shield]][contributors-url]
+</h1>
+
+
+[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url] </br></br>
 [![Demostration of using CI with GitHub Actions, NUnit | © 2023 by haibaconga](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml/badge.svg)](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml)
-</h1>
-
-
-
 
 
 <!-- PROJECT LOGO -->
