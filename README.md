@@ -59,7 +59,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-An impeccable place for you to write a fascinating Bird Story :cowboy_hat_face:
+An impeccable place for you to write your own fascinating Bird Story :cowboy_hat_face:
 
 [![Product Name Screen Shot][product-screenshot]](https://www.globird.tech/)
 
