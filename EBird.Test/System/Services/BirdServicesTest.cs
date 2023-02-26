@@ -54,7 +54,7 @@ public class BirdServicesTest : IDisposable
         //Service
         _birdServices = new BirdService(_wapperRepository, _mapper, _validator, null);
 
-        //create testing account 
+        //Create testing account 
         AccountEntity account = new AccountEntity()
         {
             FirstName = "Test",
@@ -68,7 +68,7 @@ public class BirdServicesTest : IDisposable
         _wapperRepository.Account.CreateAsync(account);
         AccountId = account.Id;
 
-        //create birdTypeId
+        //Create birdType
         BirdTypeEntity birdType = new BirdTypeEntity()
         {
             TypeName = "Test",
@@ -78,14 +78,14 @@ public class BirdServicesTest : IDisposable
         _wapperRepository.BirdType.CreateAsync(birdType);
         BirdTypeId = birdType.Id;
 
-        //get list wrong arg
+        //Get wrong argument list
         var list = MockData.BirdMockData.GetWrongArgBirdCreateDTOs();
 
         if(list.Count == 0)
             throw new Exception("Can get data");
-        _wrongArgBirdCreateDtoList.AddRange(list);
+        _wrongArgBirdCreateDTOList.AddRange(list);
 
-        //get list right arg
+        //Get right argument list
         list = MockData.BirdMockData.GetRightArgBirdCreateDTOS();
 
         if(list.Count == 0)
@@ -97,102 +97,101 @@ public class BirdServicesTest : IDisposable
             createDto.BirdTypeId = BirdTypeId;
         }
 
-        _rightArgBirdCreateDtoList.AddRange(list);
+        _rightArgBirdCreateDTOList.AddRange(list);
 
-        //get list bird update dto 
+        //Get bird update DTO list
         BirdRequest = MockData.BirdMockData.GetBirdUpdateDTOs();
         if(BirdRequest.Length == 0)
             throw new Exception("Can get data");
 
     }
 
-    //Test case 1: Get all bird when dont have data
+    //TEST CASE 1: GET ALL BIRDS WHEN HAVE NO DATA
     [Test, Order(1)]
-    public async Task GetAllBird_ThrowExceptionNotFoundException_WhenHaveNotData()
+    public async Task GetBirds_ThrowsNotFoundException_WhenHaveNoData()
     {
         // Act, Assert
         Assert.ThrowsAsync<NotFoundException>(() => _birdServices.GetBirds());
     }
 
-    //Test case 2: Get bird by it's id when dont have data 
+    //TEST CASE 2: GET BIRD BY BIRD ID WHEN HAVE NO DATA
     static Guid?[] NullAndEmptyGuid = new Guid?[] { null, Guid.Empty };
 
     [Test, Order(2)]
     [TestCaseSource("NullAndEmptyGuid")]
-    public async Task GetBirdWithId_ThrowExceptionNotFoundException_WhenHavenNotData(Guid birdId)
+    public async Task GetBird_ThrowsNotFoundException_WhenHaveNoData(Guid birdId)
     {
-        //Act and Assert
+        //Act, Assert
         Assert.CatchAsync<NotFoundException>(() => _birdServices.GetBird(Guid.Empty));
     }
 
-    //Test case 3: Create bird with wrong argument (wrong ownerId, birdTypeId) 
-    static List<BirdCreateDTO> _wrongArgBirdCreateDtoList = new List<BirdCreateDTO>();
+    //TEST CASE 3: ADD BIRD WHEN GIVEN WRONG ARGUMENT (ownerId is wrong) 
+    static List<BirdCreateDTO> _wrongArgBirdCreateDTOList = new List<BirdCreateDTO>();
 
     static List<BirdCreateDTO>[] TestResource3 = new List<BirdCreateDTO>[]
     {
-        _wrongArgBirdCreateDtoList
+        _wrongArgBirdCreateDTOList
     };
 
     [Test, Order(3)]
     [TestCaseSource("TestResource3")]
-    public async Task CreateBird_ThrowBadRequestException_WhenGivenWrongOwnerId(List<BirdCreateDTO> birdCreateDataList)
+    public async Task AddBird_ThrowsBadRequestException_WhenGivenWrongOwnerId(List<BirdCreateDTO> birdCreateDataList)
     {
-        //Act and Assert
+        //Act, Assert
         foreach(var data in birdCreateDataList)
         {
             Assert.CatchAsync<BadRequestException>(() => _birdServices.AddBird(data));
 
         }
     }
+/// thieu 1 test case AddBird_ThrowsBadRequestException_WhenGivenWrongBirdTypeId
 
-    //Test case : create bird with right argument 
-    static List<BirdCreateDTO> _rightArgBirdCreateDtoList = new List<BirdCreateDTO>();
+    //TEST CASE 4: ADD BIRD WHEN GIVEN RIGHT ARGUMENT
+    static List<BirdCreateDTO> _rightArgBirdCreateDTOList = new List<BirdCreateDTO>();
 
     static List<BirdCreateDTO>[] TestResource4 = new List<BirdCreateDTO>[]
     {
-        _rightArgBirdCreateDtoList
+        _rightArgBirdCreateDTOList
     };
-
+ 
     [Test, Order(4)]
     [TestCaseSource("TestResource4")]
-    public async Task CreateBird_ReturnGuid_WhenGivenRightData(List<BirdCreateDTO> birdCreateDataList)
+    public async Task AddBird_ReturnGuid_WhenGivenRightData(List<BirdCreateDTO> birdCreateDataList)
     {
-        Guid createdId = Guid.Empty;
+        Guid newBirdId = Guid.Empty;
         //Act and Assert
         foreach(var data in birdCreateDataList)
         {
             Assert.DoesNotThrowAsync(async () =>
             {
-                createdId = await _birdServices.AddBird(data);
+                newBirdId = await _birdServices.AddBird(data);
             });
-            var entity = await _wapperRepository.Bird.GetByIdActiveAsync(createdId);
+            var entity = await _wapperRepository.Bird.GetByIdActiveAsync(newBirdId);
             Assert.IsNotNull(entity);
             Assert.AreEqual(data.Name, entity.Name);
             Assert.AreEqual(data.Elo, entity.Elo);
             Assert.AreEqual(data.Age, entity.Age);
-            BirdId = createdId;
+            BirdId = newBirdId;
         }
     }
 
-    //Test case : create bird with wrong argument (wrong bird Id, wrongBirdTypeId)
-   
-    
+    //TEST CASE 5: UPDATE BIRD WHEN GIVEN WRONG ARGUMENT (BirdId is wrong)
     [Test, Order(5)]
-    public async Task UpdateBird_ThrowException_WhenGivenWrongBirdId()
+    public async Task UpdateBird_ThrowsBadRequestException_WhenGivenWrongBirdId()
     {
         //Act and Assert
         Assert.ThrowsAsync<BadRequestException>(() => _birdServices.UpdateBird(Guid.NewGuid(), BirdRequest[0]));
     }
 
-
+    //TEST CASE 6: UPDATE BIRD WHEN GIVEN WRONG ARGUMENT (BirdTypeId is wrong)
     [Test, Order(6)]
-    public async Task UpdateBird_ThrowException_WhenGivenWrongBirdTypeId()
+    public async Task UpdateBird_ThrowsBadRequestException_WhenGivenWrongBirdTypeId()
     {
         //Act and Assert
         Assert.ThrowsAsync<BadRequestException>(() => _birdServices.UpdateBird(BirdId, BirdRequest[0]));
     }
 
-    //Test case : update bird with right argument
+    //TEST CASE 7: UPDATE BIRD WHEN GIVEN RIGHT ARGUMENT
     [Test, Order(7)]
     public async Task UpdateBird_ReturnTrue_WhenGivenRightData()
     {
@@ -211,15 +210,15 @@ public class BirdServicesTest : IDisposable
         Assert.AreEqual(BirdRequest[0].Age, entity.Age);
     }
 
-    //Test case : delete bird with wrong argument (wrong bird Id)
+    //TEST CASE 8: DELETE BIRD WHEN GIVEN WRONG ARGUMENT (BirdId is not exist)
     [Test, Order(8)]
-    public async Task DeleteBird_ThrowException_WhenGivenWrongBirdId()
+    public async Task DeleteBird_ThrowsBadRequestException_WhenGivenWrongBirdId()
     {
         //Act and Assert
         Assert.ThrowsAsync<BadRequestException>(() => _birdServices.DeleteBird(Guid.NewGuid()));
     }
 
-    //Test case : delete bird with right argument
+    //TEST CASE 9: DELETE BIRD WHEN GIVEN RIGHT ARGUMENT
     [Test, Order(9)]
     public async Task DeleteBird_ReturnTrue_WhenGivenRightData()
     {

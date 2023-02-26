@@ -1,43 +1,45 @@
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url] </br></br>
-[![Demostration of using CI with GitHub Actions, NUnit | © 2023 by haibaconga](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml/badge.svg)](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml)
+<h1 align="center">
+  <br>
+  <a href="http://globird.tech/"><img src="https://cdn-icons-png.flaticon.com/512/3418/3418582.png" alt="globird" width="200"></a>
+  <br>
+  GLOBIRD
+</h1>
+<h4 align="center">A connectivity system that helps to effortlessly hook birder up.</h4>
 
+<div align="center">
 
-<!-- PROJECT LOGO -->
-<br />
-<div>
-
-  <h1>GloBird</h1>
-
-  <p>
-    The system connects members to conduct friendly competition with birds.
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="http://globird.tech/">View Demo</a>
-    ·
-    <a href="https://fptuniversity-my.sharepoint.com/:x:/g/personal/linhtkse160038_fpt_edu_vn/EUYknXGAQjJOkFn7Eo5TmKMByESCDQ2rcyOsUg1DlgETRQ?e=b5ootl">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Forks][forks-shield]][forks-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url] </br></br>
+  [![Demostration of using CI with GitHub Actions, NUnit | © 2023 by haibaconga](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml/badge.svg)](https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/actions/workflows/ebird-ci.yml)
 </div>
+<!--  -->
+<p align="center">
+  <a href="http://globird.tech/">View Demo</a>
+    •
+    <a href="https://fptuniversity-my.sharepoint.com/:x:/g/personal/linhtkse160038_fpt_edu_vn/EUYknXGAQjJOkFn7Eo5TmKMByESCDQ2rcyOsUg1DlgETRQ?e=b5ootl">Report Bug</a>
+    •
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <br>
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+</p>
+
 
 
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+<summary>INDEX</summary>
+<h2>Table of Contents</h2>
+  
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      Examples of the project
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Technologies Used</a></li>
       </ul>
     </li>
     <li>
@@ -52,31 +54,27 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
+<br>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Write example about of project
+An impeccable place for you to write your own fascinating Bird Story :cowboy_hat_face:
 
 [![Product Name Screen Shot][product-screenshot]](https://www.globird.tech/)
 
+<br>
 
+### Technologies Used
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Vite][Vite]][Vite-url]
-* [![.NET][.NET]][.NET-url]
-* [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]
-* [![NUnit][NUnit]][NUnit-url]
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+:robot: [![React][React.js]][React-url]<br>
+:robot: [![Vue][Vue.js]][Vue-url]<br>
+:robot: [![Vite][Vite]][Vite-url]<br>
+:robot: [![.NET][.NET]][.NET-url]<br>
+:robot: [![NUnit][NUnit]][NUnit-url]<br>
+:robot: [![Microsoft SQL Server][Microsoft SQL Server]][MSSQLServer-url]<br>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
+<br>
 
 
 <!-- GETTING STARTED -->
@@ -85,8 +83,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-SDK 6.0.406 and ASP.NET Core Runtime 6.0.14 at [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)<br />
-Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-us/download)
+* SDK 6.0.406 and ASP.NET Core Runtime 6.0.14 at [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-us/download)
 
 ### Installation
 
@@ -94,7 +92,7 @@ Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-u
    ```sh
    git clone -b master https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test.git
    ```
-2. Install dependency
+2. Install dependencies
    ```sh
    dotnet restore
    ```
@@ -103,14 +101,23 @@ Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-u
    dotnet run --project EBird.Api
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Lobby UI
+![Product Name Screen Shot][lobby-screenshot]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Build your own profile
+![Profile Screen Shot][profile-screenshot]
+
+Create a specific Bird collection !
+![Bird Collection Screen Shot][bird-collection-screenshot]
+
+
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 <!-- CONTRIBUTING -->
@@ -125,15 +132,15 @@ Microsoft SQL Server at [Microsoft SQL Server](https://dotnet.microsoft.com/en-u
 
 Hai Ba Con Ga - [haibaconga](https://github.com/Hai-Ba-Con-Ga)
 
-Project Link: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.com/Hai-Ba-Con-Ga/EBird-Backend)
+Link Project: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.com/Hai-Ba-Con-Ga/EBird-Backend)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">( <a href="#readme-top">back to top</a> )</p>
 
 
 
@@ -148,6 +155,10 @@ Project Link: [https://github.com/Hai-Ba-Con-Ga/EBird-Backend](https://github.co
 [issues-shield]: https://img.shields.io/github/issues/Hai-Ba-Con-Ga/EBird-Backend-Test?style=for-the-badge
 [issues-url]: https://github.com/Hai-Ba-Con-Ga/EBird-Backend-Test/issues
 [product-screenshot]: https://i.imgur.com/Tj43wy0.png
+[lobby-screenshot]: https://i.imgur.com/UZjCxNW.png
+[profile-screenshot]:https://i.imgur.com/8l8I8pT.png
+[bird-collection-screenshot]:https://i.imgur.com/ymL6CJc.png
+
 [Vite]: https://img.shields.io/static/v1?style=for-the-badge&message=Vite&color=646CFF&logo=Vite&logoColor=FFFFFF&label=
 [Vite-url]: https://vitejs.dev/
 [.NET]: https://img.shields.io/static/v1?style=for-the-badge&message=.NET&color=512BD4&logo=.NET&logoColor=FFFFFF&label=
