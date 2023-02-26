@@ -108,8 +108,18 @@ namespace EBird.Infrastructure.Repositories
 
         public async Task<bool> SoftDeleteBirdAsync(Guid birdID)
         {
-            var result = await this.DeleteSoftAsync(birdID);
-            if (result == null)
+            var entity = await this.GetByIdAsync(birdID);
+
+            if(entity == null)
+            {
+                throw new BadRequestException("Bird is not found");
+            }
+
+            entity.IsDeleted = true;
+            
+            var result = await this.UpdateBirdAsync(entity);
+            
+            if (result == false)
             {
                 throw new BadRequestException("Bird is not deleted");
             }

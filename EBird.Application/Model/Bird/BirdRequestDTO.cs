@@ -17,12 +17,15 @@ namespace EBird.Application.Model.Bird
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Bird age is required")]
+        [Range(0.0, Double.MaxValue, ErrorMessage = "Age must be greater than 0")]
         public int Age { get; set; }
 
         [Required(ErrorMessage = "Bird weight is required")]
+        [Range(0.0, Double.MaxValue, ErrorMessage = "Weight must be greater than 0")]
         public float Weight { get; set; }
 
         [Required(ErrorMessage = "Bird elo is required")]
+        [Range(0.0, Double.MaxValue, ErrorMessage = "Elo must be greater than 0")]
         public int Elo { get; set; } = 1500;
 
         [StringLength(50, ErrorMessage = "Bird status cannot be longer than 50 characters")]

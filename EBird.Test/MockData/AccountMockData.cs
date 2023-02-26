@@ -41,6 +41,21 @@ public class AccountMockData
             Description = account.Description
         };
     }
+    public static AccountEntity GetAccountDelete()
+    {
+        //expected values are in ACCOUNTS_EXCEPTED.json
+        dynamic account = SeedingServices.LoadJson("ACCOUNT_DELETE.json");
+        return new AccountEntity()
+        {
+            Password = account.Password,
+            Email = account.Email,
+            FirstName = account.FirstName,
+            LastName = account.LastName,
+            Username = account.Username,
+            CreateDateTime = DateTime.Now,
+            Description = account.Description
+        };
+    }
     // public static List<AccountResponse> GetAccountResponsesList()
     // {
     //     //expected values are in ACCOUNTS_EXCEPTED.json
@@ -61,6 +76,6 @@ public class AccountMockData
     //     }
     //     return accountList;
     // }
-    
+
 
 }

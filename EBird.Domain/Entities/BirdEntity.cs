@@ -20,16 +20,19 @@ namespace EBird.Domain.Entities
         [MaxLength(50)]
         [Required]
         public string Name { get; set; }
-
+        
         [Column("BirdAge", TypeName = "int")]
+        [Range(0.0, Double.MaxValue, ErrorMessage = "Age must be greater than 0")]
         [Required]
         public int Age { get; set; }
 
         [Column("BirdWeight", TypeName = "float")]
+        [Range(0.0, Double.MaxValue, ErrorMessage = "Weight must be greater than 0")]
         [Required]
         public float Weight { get; set; }
 
         [Column("BirdElo", TypeName = "int")]
+        [Range(0.0, Double.MaxValue, ErrorMessage = "Elo must be greater than 0")]
         [Required]
         public int Elo { get; set; }
 
