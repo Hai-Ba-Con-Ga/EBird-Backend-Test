@@ -25,7 +25,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
     <br>
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <a href="https://docs.google.com/document/d/1-xt8YJ7EgxiVsIKYul8B-Xhbm_zEFex_mHIJvwEub6M/edit">Description about Bird Logictics</a>
+    <a href="https://docs.google.com/document/d/1-xt8YJ7EgxiVsIKYul8B-Xhbm_zEFex_mHIJvwEub6M/edit">Description about Bird Logistics</a>
 </p>
 
 
