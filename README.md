@@ -69,7 +69,6 @@ An impeccable place for you to write your own fascinating Bird Story :cowboy_hat
 ### Technologies Used
 
 :robot: [![React][React.js]][React-url]<br>
-:robot: [![Vue][Vue.js]][Vue-url]<br>
 :robot: [![Vite][Vite]][Vite-url]<br>
 :robot: [![.NET][.NET]][.NET-url]<br>
 :robot: [![NUnit][NUnit]][NUnit-url]<br>
